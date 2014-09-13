@@ -1,4 +1,4 @@
-::res://::1410447424
+::res://::1410582388
 BasicEnemes.png::ImageTexture::1405048716::
 Edible.gd::GDScript::1408893874::
 KirbyDL.png::ImageTexture::1405048716::
@@ -29,7 +29,7 @@ door.png::ImageTexture::1405048718::
 door.res::PackedScene::1407656628::
 full_star.png::ImageTexture::1405048716::
 game_data.gd::GDScript::1408262990::
-global.gd::GDScript::1409264962::
+global.gd::GDScript::1410582388::
 icon.png::ImageTexture::1405048716::
 kirby.atex::AtlasTexture::1405048704::
 kirby.fnt::Font::1405769892::font<>./PressStart2P-Regular.ttf<>57e2c5f148db2a2150dd01bd4329126f<>1405737216

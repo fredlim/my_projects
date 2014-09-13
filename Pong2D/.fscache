@@ -1,10 +1,10 @@
-::res://::1410363783
+::res://::1410582455
 icon.png::ImageTexture::1409842396::
 ::res://assets::1409842623
 ball.png::ImageTexture::1409842623::
 left_pallete.png::ImageTexture::1409842623::
 right_pallete.png::ImageTexture::1409842623::
 separator.png::ImageTexture::1409842623::
-::res://scenes::1410364188
-pong.gd::GDScript::1410364188::
+::res://scenes::1410582462
+pong.gd::GDScript::1410582462::
 pong.scn::PackedScene::1410364163::
