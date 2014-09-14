@@ -1,0 +1,9 @@
+::res://::1410710592
+icon.png::ImageTexture::1410705217::
+splashscreen.scn::PackedScene::1410710592::
+::res://robisplash_assets::1410703596
+freesans..fnt::Font::1387804474::
+robisplash_bg.png::ImageTexture::1387804263::
+robisplash_button.png::ImageTexture::1387804263::
+robisplash_button_pressed.png::ImageTexture::1387804263::
+robisplash_logo.png::ImageTexture::1387804263::
