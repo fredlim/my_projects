@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="4" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://importedAssets/farm_barn_01.scn" type="PackedScene"></ext_resource>
+	<ext_resource path="res://importedAssets/farm_tractor_01.scn" type="PackedScene"></ext_resource>
+	<ext_resource path="res://importedAssets/ground.scn" type="PackedScene"></ext_resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "names" </string>
+			<string_array  len="37">
+				<string> "game" </string>
+				<string> "Spatial" </string>
+				<string> "_import_path" </string>
+				<string> "_import_transform" </string>
+				<string> "visibility/visible" </string>
+				<string> "__meta__" </string>
+				<string> "Camera" </string>
+				<string> "transform/local" </string>
+				<string> "projection" </string>
+				<string> "fov" </string>
+				<string> "near" </string>
+				<string> "far" </string>
+				<string> "keep_aspect" </string>
+				<string> "current" </string>
+				<string> "visible_layers" </string>
+				<string> "environment" </string>
+				<string> "DirectionalLight" </string>
+				<string> "layers" </string>
+				<string> "params/enabled" </string>
+				<string> "params/bake_mode" </string>
+				<string> "params/energy" </string>
+				<string> "colors/diffuse" </string>
+				<string> "colors/specular" </string>
+				<string> "shadow/shadow" </string>
+				<string> "shadow/darkening" </string>
+				<string> "shadow/z_offset" </string>
+				<string> "shadow/z_slope_scale" </string>
+				<string> "shadow/esm_multiplier" </string>
+				<string> "shadow/blur_passes" </string>
+				<string> "projector" </string>
+				<string> "operator" </string>
+				<string> "shadow/mode" </string>
+				<string> "shadow/max_distance" </string>
+				<string> "shadow/split_weight" </string>
+				<string> "shadow/zoffset_scale" </string>
+				<string> "barn" </string>
+				<string> "Spatial 2" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 6 </int>
+			<string> "variants" </string>
+			<array  len="23" shared="false">
+				<node_path> "" </node_path>
+				<transform> 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 </transform>
+				<bool> True </bool>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "pixel_snap" </string>
+							<bool> False </bool>
+							<string> "zoom" </string>
+							<real> 1 </real>
+							<string> "use_snap" </string>
+							<bool> False </bool>
+							<string> "ofs" </string>
+							<vector2> 1, 1 </vector2>
+							<string> "snap" </string>
+							<int> 10 </int>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "viewports" </string>
+							<array  len="4" shared="false">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 20.240629 </real>
+									<string> "x_rot" </string>
+									<real> 0.5875 </real>
+									<string> "y_rot" </string>
+									<real> -0.675001 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> -0.197728, 0.719343, -0.418557 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 40.250626 </real>
+									<string> "x_rot" </string>
+									<real> 0.3 </real>
+									<string> "y_rot" </string>
+									<real> -0.1875 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 34.508423 </real>
+									<string> "x_rot" </string>
+									<real> 0.4875 </real>
+									<string> "y_rot" </string>
+									<real> -0.3125 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> True </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+							</array>
+							<string> "viewport_mode" </string>
+							<int> 3 </int>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "3D" </string>
+				</dictionary>
+				<resource  resource_type="PackedScene" path="res://importedAssets/farm_tractor_01.scn">  </resource>
+				<transform> 1, 0, 0, 0, 0.841413, 0.540394, 0, -0.540394, 0.841413, 0, 4.03962, 9.64042 </transform>
+				<int> 0 </int>
+				<real> 60 </real>
+				<real> 0.1 </real>
+				<real> 100 </real>
+				<int> 1 </int>
+				<bool> False </bool>
+				<int> -1 </int>
+				<resource name=""></resource>				<transform> 1, 0, 0, 0, 0.889305, 0.457314, 0, -0.457314, 0.889305, 0, 4.75334, 7.22249 </transform>
+				<real> 1 </real>
+				<color> 1, 1, 1, 1 </color>
+				<real> 0 </real>
+				<real> 0.05 </real>
+				<real> 0.5 </real>
+				<real> 2 </real>
+				<resource  resource_type="PackedScene" path="res://importedAssets/farm_barn_01.scn">  </resource>
+				<resource  resource_type="PackedScene" path="res://importedAssets/ground.scn">  </resource>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="118"> 				-1, -1, 1, 0, -1, 4, 2, 0, 3, 1, 4, 2, 5, 3, 0, 0, 0, 1, 1, 4, 0, 0, 0, 0, 6, 6, -1, 12, 2, 0, 3, 1, 7, 5, 4, 2, 8, 6, 9, 7, 10, 8, 11, 9, 12, 10, 13, 11, 14, 12, 15, 13, 0, 0, 0, 16, 16, -1, 22, 2, 0, 3, 1, 7, 14, 4, 2, 17, 10, 18, 2, 19, 6, 20, 15, 21, 16, 22, 16, 23, 11, 24, 17, 25, 18, 26, 17, 27, 7, 28, 15, 29, 13, 30, 6, 31, 6, 32, 17, 33, 19, 34, 20, 0, 0, 0, 1, 35, 21, 0, 0, 0, 0, 1, 36, 22, 0, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+
+	</main_resource>
+</resource_file>
