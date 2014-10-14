@@ -1,0 +1,15 @@
+::res://::1412931014
+icon.png::ImageTexture::1411618394::
+laser.xml::PackedScene::1411624757::
+main.gd::GDScript::1412931014::
+main.scn::PackedScene::1411631759::
+rock.xml::PackedScene::1411628781::
+::res://spaceArtAssets::1411630220
+cubanoScore.fnt::Font::1411630220::font<>spaceArtAssets/Cubano-Regular.otf<>1d65b5646a9a805c62b037be6dd3a0a7<>1411630021
+::res://spaceArtAssets/png::1411618472
+laserRed.png::ImageTexture::1411618472::
+meteorSmall.png::ImageTexture::1411618472::
+player.png::ImageTexture::1411618472::
+::res://spaceArtAssets/png/Background::1411618472
+bg.png::ImageTexture::1411618472::
+splash.png::ImageTexture::1411618472::
