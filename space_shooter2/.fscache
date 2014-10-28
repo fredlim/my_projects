@@ -1,5 +1,9 @@
-::res://::1413969242
+::res://::1414468330
 icon.png::ImageTexture::1413853759::
+player.gd::GDScript::1414468330::
+player.res::PackedScene::1414046082::
 tomato.res::PackedScene::1413861966::
-::res://assets::1413861386
+::res://assets::1414042917
+effects01.png::ImageTexture::1340867770::
+fox01.png::ImageTexture::1340866652::
 tomatoes01.png::ImageTexture::1340866814::
