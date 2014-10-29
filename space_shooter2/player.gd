@@ -4,12 +4,12 @@ extends Sprite
 const CENTER = 0
 const LEFT = 1
 const RIGHT = 2
-const MOUSE_LAG = 0.32
+const CENTER_LAG = 0.1 #counter countdown for mouse idle
 
-var move_state = CENTER #initial state
 var pos setget setterPos
-var mouse_move = false
-var mcount = MOUSE_LAG
+var move_state = CENTER #initial state
+var mouse_move = false #mouse moving (true) or idle (false)
+var reset_roll = CENTER_LAG #counter to reset center roll when mouse idle
 
 func _ready():
 	pos = Vector2(0,0)
@@ -28,11 +28,10 @@ func _process(dt):
 				move_state = RIGHT
 				set_animation("right")
 		
-		if (mcount < 0):
+		if (reset_roll < 0):
 			mouse_move = false
-			mcount = MOUSE_LAG
 		else:
-			mcount = mcount - 1*dt
+			reset_roll -= 2*dt
 			
 	else:
 		if (move_state != CENTER):
@@ -44,6 +43,7 @@ func _process(dt):
 func setterPos(val):
 	pos = val
 	mouse_move = true
+	reset_roll = CENTER_LAG
 	
 
 func set_animation(a):
