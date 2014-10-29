@@ -1,7 +1,10 @@
-::res://::1414468330
+::res://::1414573891
+game.gd::GDScript::1414571668::
 icon.png::ImageTexture::1413853759::
-player.gd::GDScript::1414468330::
+level1.scn::PackedScene::1414571616::
+player.gd::GDScript::1414571668::
 player.res::PackedScene::1414046082::
+player_projectile.res::PackedScene::1414573891::
 tomato.res::PackedScene::1413861966::
 ::res://assets::1414042917
 effects01.png::ImageTexture::1340867770::
