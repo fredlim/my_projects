@@ -1,12 +1,11 @@
-::res://::1414744070
-MainProjectile_manager.gd::GDScript::1414744070::
-game.gd::GDScript::1414744070::
+::res://::1414747465
+game.gd::GDScript::1414747420::
 icon.png::ImageTexture::1413853759::
-level1.scn::PackedScene::1414744067::
-main_projectile.res::PackedScene::1414653632::
-player.gd::GDScript::1414744070::
+level1.scn::PackedScene::1414747406::
+player.gd::GDScript::1414747420::
 player.res::PackedScene::1414716423::
 player_projectile1.res::PackedScene::1414743988::
+player_projectile1_mgr.gd::GDScript::1414747420::
 tomato.res::PackedScene::1413861966::
 ::res://assets::1414042917
 effects01.png::ImageTexture::1340867770::
