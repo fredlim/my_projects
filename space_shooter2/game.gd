@@ -4,35 +4,34 @@ extends Node
 #var main_projectile = preload("res://main_projectile.res")
 
 var canvas_node
-var mpmanager
+var pjtmanager
 var nPlayer
-
+var mouse_pos
+var rapid_rate = 1
 
 func _ready():
 	canvas_node = get_node("/root/Game/Canvas")
-	mpmanager = get_node("MainProjectile_manager")
+	pjtmanager = get_node("ProjectileMgr")
 	nPlayer = get_node("Canvas/Player")
 	nPlayer.set_animation("center")
-	#set_process(true)
+	set_process(true)
 	set_process_input(true)
-
-
+	
+	
 func _process(dt):
-	pass
+	if Input.is_action_pressed("mouse_left_click"):
+		if (rapid_rate < 0):
+			pjtmanager.fire("PA", mouse_pos)
+			rapid_rate = 1
+		rapid_rate -= 60 * dt
 	
 
 func _input(ev):
 	if (ev.type==InputEvent.MOUSE_MOTION):
+		mouse_pos = ev.pos
 		nPlayer.setterPos(ev.pos)
 		
-	if (ev.type==InputEvent.MOUSE_BUTTON):
-		pass
-		#if (Input.is_mouse_button_pressed(1)):
-			# check projectile manager for available projectile node
-			#var mp = mpmanager.available()
+	#if (ev.type==InputEvent.MOUSE_BUTTON):
+	#	if (Input.is_mouse_button_pressed(1)):
+	#		pjtmanager.fire("PA", ev.pos)
 			
-			# get player position and pass position to projectile
-			#mp.set_pos(nPlayer.get_pos())
-			
-			# call projectile to show and run
-			#mp.show()
