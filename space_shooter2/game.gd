@@ -1,8 +1,6 @@
 
 extends Node
 
-#var main_projectile = preload("res://main_projectile.res")
-
 var canvas_node
 var pjtmanager
 var nPlayer
@@ -23,7 +21,7 @@ func _process(dt):
 		if (rapid_rate < 0):
 			pjtmanager.fire("PA", mouse_pos)
 			rapid_rate = 1
-		rapid_rate -= 60 * dt
+		rapid_rate -= 10 * dt
 	
 
 func _input(ev):
@@ -31,7 +29,3 @@ func _input(ev):
 		mouse_pos = ev.pos
 		nPlayer.setterPos(ev.pos)
 		
-	#if (ev.type==InputEvent.MOUSE_BUTTON):
-	#	if (Input.is_mouse_button_pressed(1)):
-	#		pjtmanager.fire("PA", ev.pos)
-			
