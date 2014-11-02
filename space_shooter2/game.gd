@@ -27,5 +27,5 @@ func _process(dt):
 func _input(ev):
 	if (ev.type==InputEvent.MOUSE_MOTION):
 		mouse_pos = ev.pos
-		nPlayer.setterPos(ev.pos)
+		nPlayer.setterPos(Vector2(ev.pos.x, ev.pos.y+30))
 		

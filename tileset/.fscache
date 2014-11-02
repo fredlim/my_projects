@@ -1,4 +1,9 @@
-::res://::1411462415
-icon.png::ImageTexture::1411462286::
-::res://tileset::1411462421
-tileset.png::ImageTexture::1411461362::
+::res://::1411797091
+icon.png::ImageTexture::1411557495::
+mytiles.res::TileSet::1411557495::
+scene1.scn::PackedScene::1411557495::
+::res://scene::1411557495
+::res://scene/1::1411557495
+tileset_edit.scn::PackedScene::1411557495::
+::res://scene/common::1411557495
+tileset.png::ImageTexture::1411557495::
