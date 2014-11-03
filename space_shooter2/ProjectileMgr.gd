@@ -1,7 +1,7 @@
 
 extends Node
 
-const PTNODE = "/root/Game/Canvas/Projectile/"
+const PJTNODE = "/root/Game/Canvas/Projectile/"
 
 var projectile
 
@@ -11,7 +11,7 @@ func _ready():
 
 
 func init_pool(ptype):
-	var canvas_node = get_node(PTNODE+ptype)
+	var canvas_node = get_node(PJTNODE+ptype)
 	
 	for i in range(10):
 		var projectile_instance = projectile.instance()
@@ -21,7 +21,7 @@ func init_pool(ptype):
 
 
 func fire(ptype, pos):
-	var canvas_node = get_node(PTNODE+ptype)
+	var canvas_node = get_node(PJTNODE+ptype)
 	
 	for i in range(0, canvas_node.get_child_count()):
 		var n = canvas_node.get_node(str(i))
@@ -29,7 +29,6 @@ func fire(ptype, pos):
 		if ( ! n.is_visible() ):
 			n.show()
 			n.set_pos(pos)
-			print("Projectile: ", str(i), n.is_visible() )
+			#print("Projectile: ", str(i), n.is_visible() )
 			n.fmove()
 			break
-

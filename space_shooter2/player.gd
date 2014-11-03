@@ -1,5 +1,5 @@
 
-extends Sprite
+extends KinematicBody2D
 
 const CENTER = 0
 const LEFT = 1
