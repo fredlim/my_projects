@@ -13,7 +13,7 @@ func _ready():
 func init_pool(ptype):
 	var canvas_node = get_node(PJTNODE+ptype)
 	
-	for i in range(10):
+	for i in range(11):
 		var projectile_instance = projectile.instance()
 		projectile_instance.set_name(str(i))
 		projectile_instance.hide()
@@ -29,6 +29,6 @@ func fire(ptype, pos):
 		if ( ! n.is_visible() ):
 			n.show()
 			n.set_pos(pos)
-			#print("Projectile: ", str(i), n.is_visible() )
-			n.fmove()
+			print("Projectile: ", str(i), n.is_visible() ) #debug
+			n.set_move()
 			break

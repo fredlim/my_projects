@@ -5,16 +5,17 @@ var move = false
 
 func _ready():
 	get_node("Animation").play("Anim",-1,1,false)
-	#set_process(true)
 	print("Layer: ", get_layer_mask())
 	set_fixed_process(true)
+	#set_process(true)
 
 
 func _fixed_process(dt):
 	if (move):
 		var pos = self.get_pos()
 		
-		if ( (pos.y < 0) or self.is_colliding() ):
+		#if ( (pos.y < 0) or self.is_colliding() ):
+		if ( ! get_node("VisibilityNotifier2D").is_on_screen() or self.is_colliding() ):
 			self.hide()
 			move = false
 			self.set_layer_mask(0)
@@ -31,6 +32,6 @@ func _fixed_process(dt):
 #		self.set_pos(pos)
 
 
-func fmove():
+func set_move():
 	self.set_layer_mask(1)
 	move = true
