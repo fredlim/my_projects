@@ -27,8 +27,6 @@ func fire(ptype, pos):
 		var n = canvas_node.get_node(str(i))
 		
 		if ( ! n.is_visible() ):
-			n.show()
-			n.set_pos(pos)
 			print("Projectile: ", str(i), n.is_visible() ) #debug
-			n.set_move()
+			n.set_move(pos)
 			break
