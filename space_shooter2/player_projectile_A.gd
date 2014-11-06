@@ -12,30 +12,24 @@ func _ready():
 
 func _fixed_process(dt):
 	if (move):
-		var pos = self.get_pos()
+		#var pos = self.get_pos()
 		
-		#if ( (pos.y < 0) or self.is_colliding() ):
 		if ( ! get_node("VisibilityNotifier2D").is_on_screen() or self.is_colliding() ):
-			get_node("Animation").stop()
-			self.hide()
-			move = false
-			self.set_layer_mask(0)
+			disable()
 			
 		move( Vector2(0, -500 * dt) )
 
-#func _process(dt):
-#	if (move):
-#		var pos = self.get_pos()
-#		pos.y -= 1000 * dt
-#		if (pos.y < 0):
-#			self.hide()
-#			move = false
-#		self.set_pos(pos)
 
-
-func set_move(pos):
+func enable(pos):
+	self.set_pos(pos)
 	get_node("Animation").play("Anim",-1,1,false)
 	self.set_layer_mask(1)
-	self.set_pos(pos)
 	self.show()
 	move = true
+
+
+func disable():
+	get_node("Animation").stop()
+	self.set_layer_mask(0)
+	self.hide()
+	move = false
