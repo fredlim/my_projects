@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource_file type="PackedScene" subresource_count="5" version="1.0" version_name="Godot Engine v1.0.3917-beta1">
+	<ext_resource path="res://assets/tube_body.*" type="Texture"></ext_resource>
+	<ext_resource path="res://assets/tube_head.*" type="Texture"></ext_resource>
+	<resource type="RectangleShape2D" path="local://1">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 32, 192 </vector2>
+
+	</resource>
+	<resource type="RectangleShape2D" path="local://2">
+		<real name="custom_solver_bias"> 0 </real>
+		<vector2 name="extents"> 44, 26 </vector2>
+
+	</resource>
+	<main_resource>
+		<dictionary name="_bundled" shared="false">
+			<string> "names" </string>
+			<string_array  len="51">
+				<string> "wall" </string>
+				<string> "Node2D" </string>
+				<string> "visibility/visible" </string>
+				<string> "visibility/opacity" </string>
+				<string> "visibility/self_opacity" </string>
+				<string> "visibility/on_top" </string>
+				<string> "transform/pos" </string>
+				<string> "transform/rot" </string>
+				<string> "transform/scale" </string>
+				<string> "__meta__" </string>
+				<string> "up" </string>
+				<string> "RigidBody2D" </string>
+				<string> "shape_count" </string>
+				<string> "shapes/0/shape" </string>
+				<string> "shapes/0/transform" </string>
+				<string> "shapes/0/trigger" </string>
+				<string> "shapes/1/shape" </string>
+				<string> "shapes/1/transform" </string>
+				<string> "shapes/1/trigger" </string>
+				<string> "mode" </string>
+				<string> "mass" </string>
+				<string> "friction" </string>
+				<string> "bounce" </string>
+				<string> "custom_integrator" </string>
+				<string> "continuous_cd" </string>
+				<string> "contacts_reported" </string>
+				<string> "contact_monitor" </string>
+				<string> "active" </string>
+				<string> "can_sleep" </string>
+				<string> "velocity/linear" </string>
+				<string> "velocity/angular" </string>
+				<string> "body" </string>
+				<string> "Sprite" </string>
+				<string> "texture" </string>
+				<string> "centered" </string>
+				<string> "offset" </string>
+				<string> "flip_h" </string>
+				<string> "flip_v" </string>
+				<string> "vframes" </string>
+				<string> "hframes" </string>
+				<string> "frame" </string>
+				<string> "modulate" </string>
+				<string> "region" </string>
+				<string> "region_rect" </string>
+				<string> "head" </string>
+				<string> "bodyCollisionShape2D" </string>
+				<string> "CollisionShape2D" </string>
+				<string> "shape" </string>
+				<string> "trigger" </string>
+				<string> "headCollisionShape2D" </string>
+				<string> "down" </string>
+			</string_array>
+			<string> "version" </string>
+			<int> 1 </int>
+			<string> "conn_count" </string>
+			<int> 0 </int>
+			<string> "node_count" </string>
+			<int> 11 </int>
+			<string> "variants" </string>
+			<array  len="25" shared="false">
+				<bool> True </bool>
+				<real> 1 </real>
+				<vector2> 0, 0 </vector2>
+				<real> 0 </real>
+				<vector2> 1, 1 </vector2>
+				<dictionary  shared="false">
+					<string> "__editor_plugin_states__" </string>
+					<dictionary  shared="false">
+						<string> "2D" </string>
+						<dictionary  shared="false">
+							<string> "pixel_snap" </string>
+							<bool> False </bool>
+							<string> "zoom" </string>
+							<real> 0.663419 </real>
+							<string> "ofs" </string>
+							<vector2> -832.85, -702.131 </vector2>
+						</dictionary>
+						<string> "3D" </string>
+						<dictionary  shared="false">
+							<string> "zfar" </string>
+							<real> 500 </real>
+							<string> "fov" </string>
+							<real> 45 </real>
+							<string> "viewports" </string>
+							<array  len="4" shared="false">
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+								<dictionary  shared="false">
+									<string> "distance" </string>
+									<real> 4 </real>
+									<string> "x_rot" </string>
+									<real> 0 </real>
+									<string> "y_rot" </string>
+									<real> 0 </real>
+									<string> "use_orthogonal" </string>
+									<bool> False </bool>
+									<string> "use_environment" </string>
+									<bool> False </bool>
+									<string> "pos" </string>
+									<vector3> 0, 0, 0 </vector3>
+								</dictionary>
+							</array>
+							<string> "viewport_mode" </string>
+							<int> 1 </int>
+							<string> "default_light" </string>
+							<bool> True </bool>
+							<string> "show_grid" </string>
+							<bool> True </bool>
+							<string> "show_origin" </string>
+							<bool> True </bool>
+							<string> "znear" </string>
+							<real> 0.1 </real>
+						</dictionary>
+					</dictionary>
+					<string> "__editor_run_settings__" </string>
+					<dictionary  shared="false">
+						<string> "custom_args" </string>
+						<string> "-l $scene" </string>
+						<string> "run_mode" </string>
+						<int> 0 </int>
+					</dictionary>
+					<string> "__editor_plugin_screen__" </string>
+					<string> "2D" </string>
+				</dictionary>
+				<vector2> 0, -300 </vector2>
+				<int> 2 </int>
+				<resource  resource_type="Shape2D" path="local://1">  </resource>
+				<matrix32> 1, -0, 0, 1, 0, 0 </matrix32>
+				<bool> False </bool>
+				<resource  resource_type="Shape2D" path="local://2">  </resource>
+				<matrix32> 1, -0, 0, 1, 0, 200 </matrix32>
+				<int> 1 </int>
+				<int> 0 </int>
+				<vector2> 1, 6 </vector2>
+				<resource  resource_type="Texture" path="res://assets/tube_body.*">  </resource>
+				<color> 1, 1, 1, 1 </color>
+				<rect2> 0, 0, 0, 0 </rect2>
+				<vector2> 0, 200 </vector2>
+				<vector2> 1.4, 0.8 </vector2>
+				<resource  resource_type="Texture" path="res://assets/tube_head.*">  </resource>
+				<vector2> 0, 300 </vector2>
+				<matrix32> 1, -0, 0, 1, 0, -200 </matrix32>
+				<vector2> 0, -200 </vector2>
+			</array>
+			<string> "nodes" </string>
+			<int_array  len="413"> 				-1, -1, 1, 0, -1, 8, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 9, 5, 0, 0, 0, 11, 10, -1, 26, 2, 0, 3, 1, 4, 1, 5, 0, 6, 6, 7, 3, 8, 4, 12, 7, 13, 8, 14, 9, 15, 10, 16, 11, 17, 12, 18, 10, 19, 13, 20, 1, 21, 1, 22, 3, 23, 10, 24, 10, 25, 14, 26, 10, 27, 0, 28, 0, 29, 2, 30, 3, 0, 1, 0, 32, 31, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 15, 33, 16, 34, 0, 35, 2, 36, 10, 37, 10, 38, 13, 39, 13, 40, 14, 41, 17, 42, 10, 43, 18, 0, 1, 0, 32, 44, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 19, 7, 3, 8, 20, 33, 21, 34, 0, 35, 2, 36, 10, 37, 10, 38, 13, 39, 13, 40, 14, 41, 17, 42, 10, 43, 18, 0, 1, 0, 46, 45, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 47, 8, 48, 10, 0, 1, 0, 46, 49, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 19, 7, 3, 8, 4, 47, 11, 48, 10, 0, 0, 0, 11, 50, -1, 26, 2, 0, 3, 1, 4, 1, 5, 0, 6, 22, 7, 3, 8, 4, 12, 7, 13, 11, 14, 23, 15, 10, 16, 8, 17, 9, 18, 10, 19, 13, 20, 1, 21, 1, 22, 3, 23, 10, 24, 10, 25, 14, 26, 10, 27, 0, 28, 0, 29, 2, 30, 3, 0, 6, 0, 32, 31, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 15, 33, 16, 34, 0, 35, 2, 36, 10, 37, 10, 38, 13, 39, 13, 40, 14, 41, 17, 42, 10, 43, 18, 0, 6, 0, 32, 44, -1, 18, 2, 0, 3, 1, 4, 1, 5, 0, 6, 24, 7, 3, 8, 20, 33, 21, 34, 0, 35, 2, 36, 10, 37, 10, 38, 13, 39, 13, 40, 14, 41, 17, 42, 10, 43, 18, 0, 6, 0, 46, 49, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 24, 7, 3, 8, 4, 47, 11, 48, 10, 0, 6, 0, 46, 45, -1, 9, 2, 0, 3, 1, 4, 1, 5, 0, 6, 2, 7, 3, 8, 4, 47, 8, 48, 10, 0 </int_array>
+			<string> "conns" </string>
+			<int_array  len="0"> 				 </int_array>
+		</dictionary>
+
+	</main_resource>
+</resource_file>

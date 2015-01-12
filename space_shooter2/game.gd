@@ -5,13 +5,14 @@ var nPlayer
 var mouse_pos
 var rapid_rate = 1
 
+
 func _ready():
 	nPlayer = get_node("Canvas/Player")
 	nPlayer.set_animation("center")
 	set_process(true)
 	set_process_input(true)
 	
-	
+
 func _process(dt):
 	if Input.is_action_pressed("mouse_left_click"):
 		if (rapid_rate < 0):
