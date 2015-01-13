@@ -1,0 +1,15 @@
+::res://::1421140534
+ProjectileMgr.gd::GDScript::1421140121::
+game.gd::GDScript::1421140121::
+icon.png::ImageTexture::1413853759::
+level1.scn::PackedScene::1421136971::
+player.gd::GDScript::1421140121::
+player.res::PackedScene::1421120844::
+player_projectile_A.gd::GDScript::1421140534::
+player_projectile_A.res::PackedScene::1421140034::
+tomato.gd::GDScript::1421140534::
+tomato.res::PackedScene::1421140452::
+::res://assets::1421111499
+effects01.png::ImageTexture::1340867770::
+fox01.png::ImageTexture::1340866652::
+tomatoes01.png::ImageTexture::1340866814::
