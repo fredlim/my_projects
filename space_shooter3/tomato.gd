@@ -1,5 +1,5 @@
 
-extends Area2D
+extends Node2D
 
 # member variables here, example:
 # var a=2
@@ -7,9 +7,8 @@ extends Area2D
 
 func _ready():
 	get_node("Animation").play("Anim",-1,1,false)
-	#self.set_layer_mask(12)
+	#get_node("Area2D").connect("body_enter",self,"_on_body_enter")
 	set_fixed_process(true)
-	#connect("body_enter", self, "_on_Area2D_body_enter")
 
 
 func _fixed_process(dt):
@@ -18,13 +17,11 @@ func _fixed_process(dt):
 	#	var col = self.get_collider()
 	#	col.disable()
 	move_local_x( -5 * dt )
-	pass
 
-#func _on_Area2D_body_enter( body ):
-#	print("tomato collide")
+#func _on_body_enter( body ):
 
 
-func _on_Tomato_body_enter( body ):
-	print("tomato collide")
-	body.disable()
-	pass # replace with function body
+func _on_Area2D_body_enter( body ):
+	if ( body.is_in_group("bullet") ):
+		print("tomato collide")
+		body.disable()
