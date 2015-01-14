@@ -2,7 +2,7 @@
 extends Node
 
 const PJTNODE = "/root/Game/Canvas/Projectile/"
-const PNO = 5
+const PNO = 3
 var canvas_node
 var projectile
 
@@ -22,16 +22,6 @@ func fire(pos):
 			projectile_instance.setphi((PI/32)*(i/2))
 		else:
 			projectile_instance.setphi((-PI/32)*ceil(i/2.0))
-		#if ( i % PNO == 0 ):
-		#	projectile_instance.setphi(0)
-		#if ( i % PNO == 1 ):
-		#	projectile_instance.setphi(-PI/32)
-		#if ( i % PNO == 2 ):
-		#	projectile_instance.setphi(PI/32)
-		#if ( i % PNO == 3 ):
-		#	projectile_instance.setphi((-PI/32)*2)
-		#if ( i % PNO == 4 ):
-		#	projectile_instance.setphi((PI/32)*2)
 		
 		projectile_instance.enable(pos)
 		
