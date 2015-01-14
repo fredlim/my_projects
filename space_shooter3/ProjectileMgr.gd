@@ -2,7 +2,7 @@
 extends Node
 
 const PJTNODE = "/root/Game/Canvas/Projectile/"
-const PNO = 3
+const PNO = 7
 var canvas_node
 var projectile
 

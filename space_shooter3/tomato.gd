@@ -8,7 +8,9 @@ func _ready():
 
 
 func _fixed_process(dt):
-	move_local_x( -5 * dt )
+	#move_local_x( -5 * dt )
+	print( str(get_parent().get_offset()) )
+	get_parent().set_offset( get_parent().get_offset() + (500*dt) )
 
 
 func _on_Area2D_body_enter( body ):
