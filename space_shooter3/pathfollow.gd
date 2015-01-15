@@ -7,4 +7,5 @@ extends PathFollow2D
 
 func _ready():
 	set_rotate(false)
-	set_cubic_interpolation( true )
+	#set_cubic_interpolation( false )
+	set_loop(false)

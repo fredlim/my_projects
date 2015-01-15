@@ -1,6 +1,8 @@
 
 extends Node2D
 
+var speed = 500
+
 func _ready():
 	get_node("Animation").play("Anim",-1,1,false)
 	#get_node("Area2D").connect("body_enter",self,"_on_body_enter")
@@ -9,8 +11,10 @@ func _ready():
 
 func _fixed_process(dt):
 	#move_local_x( -5 * dt )
-	print( str(get_parent().get_offset()) )
-	get_parent().set_offset( get_parent().get_offset() + (500*dt) )
+	get_parent().set_offset( get_parent().get_offset() + (speed*dt) )
+	print( str(get_parent().get_unit_offset()) )
+	if (get_parent().get_unit_offset() > 1):
+		self.queue_free()
 
 
 func _on_Area2D_body_enter( body ):
