@@ -14,15 +14,13 @@ func _ready():
 	set_process_input(true)
 	
 
-func _process(dt):
+func _process(delta):
 	if Input.is_action_pressed("mouse_left_click"):
 		if (countdown < 0):
 			get_node("ProjectileMgr").fire(mouse_pos)
 			countdown = 1
-		countdown -= firerate * dt
+		countdown -= firerate * delta
 		
-	#get_node("ProjectileMgr").lcount()
-	
 
 func _input(ev):
 	if (ev.type==InputEvent.MOUSE_MOTION):

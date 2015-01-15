@@ -12,13 +12,15 @@ func _ready():
 func _fixed_process(dt):
 	#move_local_x( -5 * dt )
 	get_parent().set_offset( get_parent().get_offset() + (speed*dt) )
-	print( str(get_parent().get_unit_offset()) )
+	#print( str(get_parent().get_unit_offset()) )
 	if (get_parent().get_unit_offset() > 1):
-		self.queue_free()
+		get_node("../../").dismiss()
 
 
 func _on_Area2D_body_enter( body ):
 	if ( body.is_in_group("bullet") ):
 		#print("tomato collide")
 		body.queue_free()
+		get_node("../../").dismiss()
+		
 

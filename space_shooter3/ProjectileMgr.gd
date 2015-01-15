@@ -25,6 +25,3 @@ func fire(pos):
 		
 		projectile_instance.enable(pos)
 		
-
-func lcount():
-	print("node count: ", projectile_node.get_child_count())
