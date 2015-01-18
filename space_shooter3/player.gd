@@ -16,7 +16,7 @@ func _ready():
 	set_process(true)
 
 
-func _process(dt):
+func _process(delta):
 	var current_pos = self.get_pos()
 	if (mouse_move):
 		if (pos.x < current_pos.x):
@@ -31,7 +31,7 @@ func _process(dt):
 		if (reset_roll < 0):
 			mouse_move = false
 		else:
-			reset_roll -= 2*dt
+			reset_roll -= 2*delta
 			
 	else:
 		if (move_state != CENTER):

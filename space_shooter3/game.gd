@@ -6,7 +6,6 @@ var mouse_pos
 var firerate = 15
 var countdown = 1
 
-
 func _ready():
 	nPlayer = get_node("Canvas/Player")
 	nPlayer.set_animation("center")

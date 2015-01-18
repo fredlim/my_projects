@@ -8,7 +8,3 @@ extends Path2D
 func _ready():
 	# Initalization here
 	pass
-
-func dismiss():
-	#print("I am die..")
-	queue_free()
