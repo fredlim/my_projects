@@ -12,7 +12,8 @@ func _ready():
 	
 
 func _fixed_process(dt):
-	if ( ! get_node("VisibilityNotifier2D").is_on_screen() or transit == false):
+	#if ( ! get_node("VisibilityNotifier2D").is_on_screen() or transit == false):
+	if (get_pos().y < 0 or transit == false):
 		queue_free()
 	
 	# Method 1

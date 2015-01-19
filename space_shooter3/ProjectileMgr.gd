@@ -24,3 +24,4 @@ func fire(pos):
 		
 		projectile_instance.enable(pos)
 		
+	print("pjt#: ", get_node( "/root/Game/Canvas/Projectile/" ).get_child_count())

@@ -18,16 +18,6 @@ func _process(delta):
 		var enemy_instance = enemy_res.instance()
 		enemy_node.add_child(enemy_instance)
 		
-		var enemy_instance = enemy_res.instance()
-		enemy_node.add_child(enemy_instance)
-		var epos = enemy_instance.get_pos()
-		enemy_instance.set_pos(Vector2(epos.x, epos.y+100))
-		
-		var enemy_instance = enemy_res.instance()
-		enemy_node.add_child(enemy_instance)
-		var epos = enemy_instance.get_pos()
-		enemy_instance.set_pos(Vector2(epos.x, epos.y+200))
-		
 		countdown = 1
 	countdown -= spawnrate * delta
 	

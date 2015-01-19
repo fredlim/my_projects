@@ -38,6 +38,8 @@ func _process(delta):
 			move_state = CENTER
 			set_animation("center")
 	self.set_pos(pos)
+	
+	print("player_pos: ", get_pos())
 
 
 func setterPos(val):
