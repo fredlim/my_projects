@@ -12,7 +12,7 @@ var mouse_move = false #mouse moving (true) or idle (false)
 var reset_roll = MOUSE_IDLE #counter to reset center roll when mouse idle
 
 func _ready():
-	pos = Vector2(0,0)
+	pos = Vector2(100,100)
 	set_process(true)
 
 
@@ -39,7 +39,7 @@ func _process(delta):
 			set_animation("center")
 	self.set_pos(pos)
 	
-	print("player_pos: ", get_pos())
+	#print("player_pos: ", get_pos())
 
 
 func setterPos(val):

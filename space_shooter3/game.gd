@@ -20,6 +20,8 @@ func _process(delta):
 			countdown = 1
 		countdown -= firerate * delta
 		
+		#print("pjt#: ", get_node( "/root/Game/Canvas/Projectile/" ).get_child_count())
+
 
 func _input(ev):
 	if (ev.type==InputEvent.MOUSE_MOTION):
