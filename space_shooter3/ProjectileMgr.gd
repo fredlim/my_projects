@@ -5,7 +5,7 @@ const PJTNODE = "/root/Game/Canvas/Projectile/"
 const PNO = 5
 var projectile_node
 var projectile_res
-var part = 24
+var part = 16
 
 func _ready():
 	projectile_res = preload("res://player_projectile_A.res")
