@@ -2,7 +2,7 @@
 extends KinematicBody2D
 
 var dir = Vector2(0,1)
-var speed = 1000
+var speed = 1500
 var transit = true
 var vp
 
@@ -12,13 +12,12 @@ func _ready():
 	set_fixed_process(true)
 	
 
-func _on_VisibilityNotifier2D_exit_screen():
-	queue_free()
+#func _on_VisibilityNotifier2D_exit_screen():
+#	queue_free()
 
 
 func _fixed_process(dt):
-	#if ( ! get_node("VisibilityNotifier2D").is_on_screen() or transit == false):
-	if (transit == false):
+	if ( ! get_node("VisibilityNotifier2D").is_on_screen() or transit == false):
 		queue_free()
 	
 	# Method 1

@@ -3,7 +3,7 @@ extends Node
 
 var nPlayer
 var mouse_pos
-var firerate = 15
+var firerate = 10
 var countdown = 1
 
 func _ready():

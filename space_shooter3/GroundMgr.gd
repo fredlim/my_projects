@@ -7,8 +7,6 @@ var map_node
 var map1_res
 var map2_res
 var scroll = 0
-var scrollspeed = 50
-var bgheight = 2560
 
 func _ready():
 	map1_res = preload("res://map1.res")
