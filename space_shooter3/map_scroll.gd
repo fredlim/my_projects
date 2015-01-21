@@ -12,10 +12,10 @@ func _ready():
 
 func _process(delta):
 	pos += scrollspeed * delta
-	if (pos > SCREEN_H):
-		get_parent().add_map(SCREEN_H - pos)
-		queue_free()
 	set_pos(Vector2(0, pos))
+	if (pos > SCREEN_H):
+		get_parent().add_map(pos - SCREEN_H)
+		queue_free()
 
 
 func setpos(p):

@@ -31,12 +31,12 @@ func _process(delta):
 	pass
 
 
-func add_map(d):
+func add_map(displace):
 	var map_instance
 	if (randi() % 2 == 1):
 		map_instance = map1_res.instance()
 	else:
 		map_instance = map2_res.instance()
 	map_node.add_child(map_instance)
-	map_instance.setpos(-SCREEN_H - d)
+	map_instance.setpos(-SCREEN_H + displace)
 	
