@@ -1,9 +1,10 @@
 
 extends Node2D
 
-const SCREEN_H = 1280
+const MAPADJ = 14   # 540 / 128 - 4 * 128 / 2   screen width / tile width
+const SCREEN_H = 960
 var pos = 0
-var scrollspeed = 300
+var scrollspeed = 500
 
 func _ready():
 
@@ -17,7 +18,7 @@ func _process(delta):
 		get_parent().add_map(pos - SCREEN_H)
 		queue_free()
 	else:
-		set_pos(Vector2(0, pos))
+		set_pos(Vector2(MAPADJ, pos))
 
 
 func setpos(p):

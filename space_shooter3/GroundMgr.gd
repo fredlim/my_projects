@@ -2,7 +2,7 @@
 extends Node
 
 const BGNODE = "/root/Game/Ground/"
-const SCREEN_H = 1280
+const SCREEN_H = 960
 var map_node
 var map1_res
 var map2_res
@@ -33,10 +33,13 @@ func _process(delta):
 
 func add_map(displace):
 	var map_instance
-	if (randi() % 2 == 1):
+	var r = randi()
+	
+	if (r % 2 == 0):
 		map_instance = map1_res.instance()
-	else:
+	elif (r % 2 == 1):
 		map_instance = map2_res.instance()
+		
 	map_node.add_child(map_instance)
 	map_instance.setpos(-SCREEN_H + displace)
 	
